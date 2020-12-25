@@ -1,0 +1,591 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+
+header {
+    border-top: solid 15px rgb(180, 51, 219);
+    background-color: rgb(208, 214, 228);
+    padding-bottom: 1px;
+    color: white;
+}
+
+#recent {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(91, 91, 173);
+    font-size: 25px;
+}
+
+#Blogs {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(8, 8, 8);
+    font-size: 25px;
+}
+
+
+nav {
+    background: rgb(143, 143, 228);
+    top: 0;
+    position: sticky;
+    z-index: 1;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    margin-bottom: 3px;
+}
+
+nav li a:hover {
+    box-shadow: 0 3px rgb(180, 51, 219);
+    background: rgba(180, 51, 219, 0.178);
+}
+
+.active {
+    box-shadow: 0 3px rgb(180, 51, 219);
+    background: rgba(180, 51, 219, 0.178);
+}
+
+nav li ul {
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    left: 0;
+    min-width: 260px;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+    background-color: rgb(143, 143, 228);
+}
+
+nav ul li ul li {
+    width: 100%;
+}
+
+nav ul li:hover>ul,
+nav ul li ul:hover {
+    display: inline;
+    visibility: visible;
+}
+
+main {
+    flex: center;
+    margin: 10px 0;
+
+}
+
+.slider .prev {
+    position: absolute;
+    left: 160px;
+    top: 22rem;
+}
+
+.slider .next {
+    position: absolute;
+    right: 160px;
+    top: 22rem;
+
+}
+
+/* .slider img {
+    position: relative;
+} */
+
+.slider a {
+    text-decoration: none;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 4rem;
+    line-height: 4rem;
+    background: rgb(7, 110, 136);
+    color: hotpink;
+
+
+}
+
+.slider :hover {
+    background-color: rgb(214, 105, 127);
+}
+
+
+
+
+/* styling of the link boxes */
+
+.box-lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#box-1 {
+    border: solid 1px rgb(143, 143, 228);
+    list-style-type: none;
+    text-decoration: none;
+    width: 15rem;
+    display: inline-block;
+    padding: 45px 45px 45px 45px;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+
+.box-lists ul:hover {
+    box-shadow: 5px 10px 3px rgb(143, 143, 228);
+    background-image: linear-gradient(rgb(232, 222, 235), rgb(172, 156, 175));
+
+    transform: rotate(-8deg);
+    transition-duration: 1s;
+
+}
+
+
+
+#box-2 {
+    border: solid 1px rgb(143, 143, 228);
+    list-style-type: none;
+    text-decoration: none;
+    width: 15rem;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 45px 45px 45px 45px;
+    display: inline-block;
+
+}
+
+#box-3 {
+    border: solid 1px rgb(143, 143, 228);
+    list-style-type: none;
+    text-decoration: none;
+    width: 15rem;
+    display: inline-block;
+    padding: 45px 45px 45px 45px;
+    text-align: center;
+    box-sizing: border-box;
+
+
+}
+
+#box-4 {
+    border: solid 1px rgb(143, 143, 228);
+    list-style-type: none;
+    text-decoration: none;
+    width: 15rem;
+    display: inline-block;
+    padding: 45px 45px 45px 45px;
+    text-align: center;
+    box-sizing: border-box;
+
+
+}
+
+
+
+
+.topic-1-img {
+    float: left;
+}
+
+.topic-2-img {
+    float: right;
+    padding-left: 1px;
+}
+
+.topic-3-img {
+    float: left;
+    padding-left: 1px;
+}
+
+.bullet-points {
+    float: center;
+    text-align: center;
+
+}
+
+.bullet-points li {
+
+    display: inline-block;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+
+}
+
+.bullet-points span :hover {
+    background-color: #7e7373;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    background-color: rgb(143, 143, 228);
+    border-top: solid 15px rgb(180, 51, 219);
+    padding-bottom: 15px;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer ul li :hover {
+    color: rgb(180, 51, 219);
+}
+
+footer h3 {
+    text-align: center;
+    color: white;
+}
+
+.address {
+    color: white;
+}
+
+.table-1 {
+    border: grey solid 2px;
+}
+
+#data {
+    border: solid grey 1px;
+}
+
+.container {
+    float: center;
+}
+
+
+
+#username,
+#full-name,
+#telephone,
+#password,
+#Email,
+#Date-birth,
+#select-children,
+#choose-degree,
+#About-yourself,
+#upload {
+    border: solid 2px rgb(143, 143, 228);
+    border-radius: 7px 7px 0px 0px;
+    background: rgb(208, 214, 228);
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    border-bottom: solid 3px rgb(143, 143, 228);
+}
+
+#username-Email {
+    border: solid 2px rgb(143, 143, 228);
+    border-radius: 7px 7px 0px 0px;
+    background: rgb(208, 214, 228);
+    display: block;
+    width: 35rem;
+    padding: 12px 20px;
+    margin: auto;
+    border-bottom: solid 3px rgb(143, 143, 228);
+}
+
+#label {
+    margin: 15rem;
+}
+
+#link-pass {
+    margin: 15rem;
+
+}
+
+#div-1 a:hover {
+    color: rgb(180, 51, 219);
+}
+
+
+/* password link in the page of signin*/
+#password-1 {
+    border: solid 2px rgb(143, 143, 228);
+    border-radius: 7px 7px 0px 0px;
+    background: rgb(208, 214, 228);
+    display: block;
+    width: 35rem;
+    padding: 12px 20px;
+    margin: auto;
+    border-bottom: solid 3px rgb(143, 143, 228);
+}
+
+
+#profile-color {
+    border: solid 2px rgb(143, 143, 228);
+    background: rgb(208, 214, 228);
+    display: block;
+    width: 100%;
+    border-radius: 7px 7px 0px 0px;
+    border-bottom: solid 3px rgb(143, 143, 228);
+
+}
+
+
+
+#field {
+
+    border: solid 1px rgb(143, 143, 228);
+    border-bottom: solid 3px rgb(143, 143, 228);
+    border-radius: 7px 7px 0px 0px;
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+
+
+}
+
+#field-1 {
+
+    border: solid 1px rgb(143, 143, 228);
+    border-bottom: solid 3px rgb(143, 143, 228);
+    border-radius: 7px 7px 0px 0px;
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+
+
+}
+
+#field-2 {
+
+    border: solid 1px rgb(143, 143, 228);
+    border-bottom: solid 3px rgb(143, 143, 228);
+    border-radius: 7px 7px 0px 0px;
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+
+
+}
+
+
+#legend {
+    background-color: rgb(208, 214, 228);
+    border: solid 1px rgb(143, 143, 228);
+    border-bottom: solid 3px rgb(143, 143, 228);
+    border-radius: 7px 7px 0px 0px;
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+}
+
+#legend-1 {
+    background-color: rgb(208, 214, 228);
+    border: solid 1px rgb(143, 143, 228);
+    border-bottom: solid 3px rgb(143, 143, 228);
+    border-radius: 7px 7px 0px 0px;
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+}
+
+#legend-2 {
+    background-color: rgb(208, 214, 228);
+    border: solid 1px rgb(143, 143, 228);
+    border-bottom: solid 3px rgb(143, 143, 228);
+    border-radius: 7px 7px 0px 0px;
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+}
+
+
+#submit-button {
+    border: solid 1px rgb(143, 143, 228);
+    border-radius: 7px 7px 7px 7px;
+    background-color: rgb(208, 214, 228);
+    display: inline;
+    width: 45px;
+    padding: 12px 20px;
+    margin: auto;
+
+
+
+}
+
+/* styling of signin buton in the page of signin*/
+#submit-button-2 {
+
+    border: solid 1px rgb(143, 143, 228);
+    border-radius: 6px 6px 6px 6px;
+    background-color: rgb(208, 214, 228);
+    display: inline;
+    width: 45px;
+    padding: 12px 20px;
+    margin-left: 130px;
+}
+
+#submit-button-2:hover {
+    background-color: rgb(143, 143, 228);
+    color: white;
+}
+
+#link-pass:hover {
+    color: rgb(180, 51, 219);
+}
+
+
+
+
+
+#Reset-button {
+    border: solid 1px rgb(233, 33, 33);
+    border-radius: 7px 7px 7px 7px;
+    background-color: rgb(238, 123, 123);
+    display: inline;
+    width: 45px;
+    padding: 12px 20px;
+    float: right;
+}
+
+#submit-button:hover {
+    background-color: rgb(143, 143, 228);
+    color: white;
+}
+
+#Reset-button:hover {
+    background-color: rgb(233, 33, 33);
+    color: white;
+}
+
+/* SCHEDULE */
+
+table,
+th,
+td {
+    border: 2px solid rgb(143, 143, 228);
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+tr:nth-child(1),
+tr:nth-child(2),
+tr:nth-child(3) {
+    background-color: rgba(143, 143, 228, 0.144);
+}
+
+th {
+    color: rgb(143, 143, 228);
+}
+
+th,
+td {
+    padding: 5px;
+}
+
+td {
+    text-align: center;
+}
+
+/* style of flexnav image*/
+/* .img-1 {
+    
+    width: 100%;
+} */
+
+.flexnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.articles {
+    width: 65%;
+}
+
+.sidenav {
+    width: 30%;
+    border-top: solid 15px rgb(180, 51, 219);
+    background-color: rgb(208, 214, 228);
+}
+
+.flexnav img {
+    width: 100%;
+}
+
+.sidenav a {
+    text-decoration: none;
+    padding: 12px 12px 12px 2px;
+    color: rgb(143, 143, 228);
+}
+
+.sidenav h2 {
+    color: rgb(143, 143, 228);
+    font-size: 28px;
+}
+
+.sidenav li {
+    padding: 10px 10px 10px 2px;
+}
+
+.sidenav a:hover {
+
+    color: rgb(180, 51, 219);
+}
+
+/* Float style */
+
+.float .sidenav {
+    float: right;
+}
+
+/* Grid Style */
+
+.grid {
+    display: grid;
+    grid-gap: 26px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid img {
+    width: 100%
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <title>Signup | Dania Diar Talib</title>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1> <img src="./images/logo.png" style="width: 50px;"> Dania Diar Talib</h1>
+        </div>
+        
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul >
+                <li>
+                    <a  href="./index.html"> Home</a>
+                </li>
+                <li>
+                    <a href="./Blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="./schedule.html"> Schedule</a>
+                </li>
+                <li>
+                    <a href=""> Layout Design <i class=" fa fa-caret-down"></i></a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="./floatnav.html">Float Layout with Side nav</a>
+                        </li>
+                        <li>
+                            <a href="./flexnav.html">FlexBox Layout with Side nav</a>
+                        </li>
+                        <li>
+                            <a href="./gridblog.html">Blog Grid View</a>
+                        </li>
+                    </ul>
+
+                </li>
+                <li>
+                    <a class="active" href="./signup.html">Sign up</a>
+                </li>
+                <li>
+                    <a href="./signin.html">Sign in</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <main> 
+        <div class="container">
+       <h2> Signup form</h2>
+         
+        <form name="sign up">
+         <div ><label for="Username">Username</label> <br>
+         <input type="text" id="username" name="Username" placeholder="Username">
+        </div>
+        <br>
+         <div><label for="Full name">Full name</label><br>
+         <input type="text"id="full-name" name="Full name" placeholder="Full name">
+        </div>
+        <br>
+         
+         <div> <label for="Email">Email</label><br>
+         <input type="email"id="Email"  name="Email" placeholder="Domain@example.com">
+        </div>
+        <br>
+       <div>  <label for="Telephone">Telephone</label><br>
+         <input type="tel" id="telephone"  name="Telephone" placeholder="00964-000-000-00-00">
+        </div>
+        <br>
+        <div> <label for="Password">Password</label><br>
+         <input type="password" id="password" name="Password" placeholder="Password">
+        </div>
+        <br>
+        <div> <label for="Date of birth">Date of birth</label><br>
+         <input type="date" id="Date-birth"  name="Date-birth" placeholder="Date of birth">
+        </div>
+        <br>
+         <div><label for="Profile color">profile color</label><br>
+         <input type="color"id="profile-color"  value="#ff6699">
+        </div>
+        <br>
+         <fieldset id="field">
+             <legend id="legend"> Marital status </legend>
+             <p>
+                 <input type="radio" id="Marital-status"  name="Status">
+                 <label for="Single"> Single</label>
+             </p>
+             <p>
+                 <input type="radio" id="Marital-status"  name="Status">
+                 <label for="Married"> Married</label>
+             </p>
+             <p>
+                 <input type="radio" id="Marital-status"  name="Status">
+                 <label for=" It is private"> It is private </label>
+             </p>
+             <br>
+         </fieldset>
+         <br>
+         <label for="No. of children"> No.of children</label>
+         <select id="select-children">
+         <option> none</option>
+         <option> 1</option>
+         <option> 2</option>
+         <option> 3</option>
+         <option> 4</option>
+         </select>
+         <br>
+         <br>
+         <label for="Choose your degrees"> Choose your degrees</label>
+         <select name="degrees" id="choose-degree" multiple>
+             <option value="D">Diploma</option>
+             <option value="BSc">Bachelor of science (BSc)</option>
+             <option value="BSc">Bachelor of Art (BA)</option>
+             <option value="HD">High Diploma</option>
+             <option value="MSc">Master of science (MSc)</option>
+         </select>
+         <br>
+         <br>
+         <label for="About yourself">About yourself</label>
+         <textarea name="describe" id="About-yourself" cols="30" rows="4" placeholder="About yourself"></textarea>
+          <br>
+          <br>
+          <label for="upload your cv">Upload your CV</label>
+          <input type="file" id="upload" name="Upload your cv">
+          <br>
+          <fieldset id="field-1">
+              <legend id="legend-1"> Gender</legend>
+              <p>
+                  <input type="radio" id="gender" name="Gender">
+                  <label for="Male">Male</label>
+              </p>
+              <p>
+                  <input type="radio" id="gender" name="Gender">
+                  <label for="Female">Female</label>
+              </p>
+          </fieldset>
+          <br>
+          <fieldset id="field-2">
+              <legend id="legend-2">Agrrements</legend>
+              <p>
+                  please read the terms and agrrements
+              </p>
+              <label for="agrrements">
+                  <input type="checkbox" name="agrrements"> I have read all the terms 
+              </label>
+              <br>
+              <label for="agrrements">
+                  <input type="checkbox" name="agrrements"> Yes i agree 
+              </label>
+              <br>
+          </fieldset>
+          <br>
+         <div> <input type=" submit" id="submit-button"   value="sign up">
+          <input type=" Reset" id="Reset-button"  value="Reset"></div>
+        </form>
+       </div>
+    </div>
+    </main>
+    <footer class="footer-content">
+        <div class="container flex">
+            <div >
+                <h3> sitemap</h3>
+                <ul>
+                    <li> <a href="./index.html"> home</a></li>
+                    <li> <a href="#"> about</a></li>
+                    <li> <a href="#">contact</a></li>
+                    <li> <a href="signin.html">login</a></li>
+                </ul>
+            </div>
+
+
+            <div>
+                <h3 > terms and quick links</h3>
+                <ul>
+                    <li> <a href="#"> terms of usage</a></li>
+                    <li> <a href="#"> Link 1</a></li>
+                    <li> <a href="#"> Link 2</a></li>
+                    <li> <a href="#">Link 3</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 > adresses and contacts</h3>
+
+                <address class="address" > city ,governorate,Country</address>
+                <phone  class="address"> phone: 0964 000 000 0000</phone> <br>
+                <email  class="address"> email: daniadeyar@gmail.com</email>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
